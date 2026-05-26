@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estoque | PinkShelf</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="topo">
+    <a class="marca" href="../index.html">
+      <img src="../images/img00.png.png" alt="Logo PinkShelf" class="logo-img" onerror="this.style.display='none'">
+      <span class="logo-texto">PinkShelf</span>
+      <small>controle de estoque</small>
+    </a>
+    <nav class="menu">
+      <ul>
+        <li><a class="" href="../index.html">Início</a></li>
+        <li><a class="ativo" href="../pages/estoque.html">Estoque</a></li>
+        <li><a class="" href="../pages/cadastro-pecas.html">Cadastrar peças</a></li>
+        <li><a class="" href="../pages/relatorio.html">Relatório</a></li>
+        <li><a class="" href="../pages/nossosplanos.html">Nossos Planos</a></li>
+        <li><a class="" href="../pages/login.html">Login</a></li>
+        <li><a class="" href="../pages/localizacao.html">Localização</a></li>
+        <li><a class="" href="../pages/suporte.html">Suporte</a></li>
+        <li><a class="" href="../pages/sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="painel">
+    <section class="titulo-pagina">
+      <h1>Estoque da loja</h1>
+      <p>Visualize, pesquise, edite e exclua as peças cadastradas.</p>
+    </section>
+    <section class="cards-resumo">
+      <div class="card-resumo">
+        <h3>Peças cadastradas</h3>
+        <p id="totalItens">0</p>
+      </div>
+      <div class="card-resumo">
+        <h3>Quantidade total</h3>
+        <p id="quantidadeTotal">0</p>
+      </div>
+      <div class="card-resumo">
+        <h3>Valor em estoque</h3>
+        <p id="valorTotal">R$ 0,00</p>
+      </div>
+      <div class="card-resumo alerta">
+        <h3>Baixo estoque</h3>
+        <p id="baixoEstoque">0</p>
+      </div>
+    </section>
+    <section class="barra-acoes"><input type="search" id="buscaEstoque"
+        placeholder="pesquisar por nome, categoria, cor..."><a class="botao" href="cadastro-pecas.html">+ Cadastrar
+        peça</a></section>
+    <section class="tabela-box">
+      <table>
+        <thead>
+          <tr>
+            <th>Peça</th>
+            <th>Categoria</th>
+            <th>Tam.</th>
+            <th>Cor</th>
+            <th>Qtd.</th>
+            <th>Preço</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaEstoque"></tbody>
+      </table>
+      <p id="mensagemEstoque" class="mensagem-vazia"></p>
+    </section>
+  </main>
+  <footer>
+    <p>PinkShelf • Projeto acadêmico de Introdução à Web</p>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

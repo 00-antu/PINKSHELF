@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatório | PinkShelf</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="topo">
+    <a class="marca" href="../index.html">
+      <img src="../images/img00.png.png" alt="Logo PinkShelf" class="logo-img" onerror="this.style.display='none'">
+      <span class="logo-texto">PinkShelf</span>
+      <small>controle de estoque</small>
+    </a>
+    <nav class="menu">
+      <ul>
+        <li><a class="" href="../index.html">Início</a></li>
+        <li><a class="" href="../pages/estoque.html">Estoque</a></li>
+        <li><a class="" href="../pages/cadastro-pecas.html">Cadastrar peças</a></li>
+        <li><a class="ativo" href="../pages/relatorio.html">Relatório</a></li>
+        <li><a class="" href="../pages/nossosplanos.html">Nossos Planos</a></li>
+        <li><a class="" href="../pages/login.html">Login</a></li>
+        <li><a class="" href="../pages/localizacao.html">Localização</a></li>
+        <li><a class="" href="../pages/suporte.html">Suporte</a></li>
+        <li><a class="" href="../pages/sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="painel">
+    <section class="titulo-pagina">
+      <h1>Relatório do mês</h1>
+      <p>Os cards e gráficos são gerados a partir das peças cadastradas.</p>
+    </section>
+    <section class="filtro-relatorio"><select id="filtroMes">
+        <option>Todos</option>
+        <option>Janeiro</option>
+        <option>Fevereiro</option>
+        <option>Março</option>
+        <option>Abril</option>
+        <option>Maio</option>
+        <option>Junho</option>
+        <option>Julho</option>
+        <option>Agosto</option>
+        <option>Setembro</option>
+        <option>Outubro</option>
+        <option>Novembro</option>
+        <option>Dezembro</option>
+      </select><button class="botao" type="button" id="btnGerarRelatorio">gerar relatório</button></section>
+    <section class="cards-resumo">
+      <div class="card-resumo">
+        <h3>Total de peças</h3>
+        <p id="relTotalPecas">0</p>
+      </div>
+      <div class="card-resumo">
+        <h3>Valor em estoque</h3>
+        <p id="relValorEstoque">R$ 0,00</p>
+      </div>
+      <div class="card-resumo alerta">
+        <h3>Baixo estoque</h3>
+        <p id="relBaixoEstoque">0</p>
+      </div>
+      <div class="card-resumo">
+        <h3>Categoria destaque</h3>
+        <p id="relCategoriaDestaque">-</p>
+      </div>
+    </section>
+    <section class="area-graficos">
+      <div class="grafico-card">
+        <h2>Estoque por categoria</h2><canvas id="graficoCategorias"></canvas>
+      </div>
+      <div class="grafico-card">
+        <h2>Valor por categoria</h2><canvas id="graficoValores"></canvas>
+      </div>
+    </section>
+    <section class="tabela-box">
+      <h2>Lista usada no relatório</h2>
+      <div id="resultadoRelatorio"></div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <footer>
+    <p>PinkShelf • Projeto acadêmico de Introdução à Web</p>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte | PinkShelf</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="topo">
+    <a class="marca" href="../index.html">
+      <img src="../images/img00.png.png" alt="Logo PinkShelf" class="logo-img" onerror="this.style.display='none'">
+      <span class="logo-texto">PinkShelf</span>
+      <small>controle de estoque</small>
+    </a>
+    <nav class="menu">
+      <ul>
+        <li><a class="" href="../index.html">Início</a></li>
+        <li><a class="" href="../pages/estoque.html">Estoque</a></li>
+        <li><a class="" href="../pages/cadastro-pecas.html">Cadastrar peças</a></li>
+        <li><a class="" href="../pages/relatorio.html">Relatório</a></li>
+        <li><a class="" href="../pages/nossosplanos.html">Nossos Planos</a></li>
+        <li><a class="" href="../pages/login.html">Login</a></li>
+        <li><a class="" href="../pages/localizacao.html">Localização</a></li>
+        <li><a class="ativo" href="../pages/suporte.html">Suporte</a></li>
+        <li><a class="" href="../pages/sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="area-form">
+    <section class="texto-lateral">
+      <h1>Suporte</h1>
+      <p>Envie sua dúvida sobre cadastro, estoque, planos ou relatórios.</p>
+    </section>
+    <form class="formulario" id="formSuporte">
+      <h2>Fale conosco</h2><label>Nome<input required></label><label>E-mail<input type="email"
+          required></label><label>Plano<select>
+          <option>Plano Básico</option>
+          <option>Plano Premium</option>
+          <option>Plano Pink Elite</option>
+        </select></label><label>Mensagem<textarea required></textarea></label><button class="botao">Enviar</button>
+    </form>
+  </main>
+  <section class="secao">
+    <h2>Perguntas frequentes</h2>
+    <details>
+      <summary>Como cadastrar uma peça?</summary>
+      <p>Entre em Cadastrar peças, preencha os dados e clique em salvar.</p>
+    </details>
+    <details>
+      <summary>Consigo editar uma peça?</summary>
+      <p>Sim, na página Estoque clique em editar.</p>
+    </details>
+  </section>
+  <footer>
+    <p>PinkShelf • Projeto acadêmico de Introdução à Web</p>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
