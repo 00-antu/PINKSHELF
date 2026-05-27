@@ -13,30 +13,58 @@ function salvarPecas(pecas) { localStorage.setItem('pecasPinkShelf', JSON.string
 function pegarLoja() { return JSON.parse(localStorage.getItem('lojaPinkShelf')) || null; }
 function statusPeca(qtd) { if (qtd <= 0) return ['zerado', 'Zerado']; if (qtd <= 5) return ['baixo', 'Baixo estoque']; return ['ok', 'Disponível']; }
 function irPara(caminho) { window.location.href = caminho; }
-
-// Cadastro da loja
+/* CADASTRO DA LOJA */
 const formCadastro = document.getElementById('formCadastro');
+
 if (formCadastro) {
-  formCadastro.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const senha = document.getElementById('senha').value;
-    const confirmar = document.getElementById('confirmar').value;
-    if (senha !== confirmar) { alert('As senhas precisam ser iguais.'); return; }
-    const loja = {
-      loja: document.getElementById('loja').value.trim(),
-      responsavel: document.getElementById('responsavel').value.trim(),
-      email: document.getElementById('email').value.trim(),
-      telefone: document.getElementById('telefone').value.trim(),
-      plano: document.getElementById('plano').value,
-      pagamento: document.getElementById('pagamento').value,
-      senha: senha
-    };
-    localStorage.setItem('lojaPinkShelf', JSON.stringify(loja));
-    localStorage.setItem('sessaoPinkShelf', 'ativa');
-    alert('Cadastro realizado com sucesso! Agora cadastre as peças da loja.');
-    irPara('cadastro-pecas.html');
-  });
+
+   formCadastro.addEventListener('submit', function(e) {
+
+      e.preventDefault();
+
+      /* PEGA AS SENHAS */
+      const senha = document.getElementById('senha').value;
+      const confirmar = document.getElementById('confirmar').value;
+
+      /* VALIDAÇÃO */
+      if (senha !== confirmar) {
+
+         alert('As senhas precisam ser iguais!');
+
+         return;
+      }
+
+      /* DADOS DA LOJA */
+      const loja = {
+
+         loja: document.getElementById('loja').value.trim(),
+
+         responsavel: document.getElementById('responsavel').value.trim(),
+
+         email: document.getElementById('email').value.trim(),
+
+         telefone: document.getElementById('telefone').value.trim(),
+
+         plano: document.getElementById('plano').value,
+
+         pagamento: document.getElementById('pagamento').value,
+
+         senha: senha
+      };
+
+      /* SALVA */
+      localStorage.setItem('lojaPinkShelf', JSON.stringify(loja));
+
+      alert('Cadastro realizado com sucesso!');
+
+      /* REDIRECIONA */
+      window.location.href = 'cadastro-pecas.html';
+
+   });
+
 }
+ 
+
 
 // Login
 const formLogin = document.getElementById('formLogin');
