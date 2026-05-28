@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0" />
-    <title>Cadastro | PinkShelf</title>
+    <title>Cadastrar peças | PinkShelf</title>
     <link rel="stylesheet" href="../css/estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,6 +30,8 @@
           <li><a class="" href="../index.html">Início</a></li>
           <li><a class="" href="../pages/login.html">Login</a></li>
           <li><a class="" href="../pages/nossosplanos.html">Nossos Planos</a></li>
+          <li><a class="" href="../pages/estoque.html">Estoque</a></li>
+          <li><a class="" href="../pages/relatorio.html">Relatório</a></li>
           <li><a class="" href="../pages/localizacao.html">Localização</a></li>
           <li><a class="" href="../pages/suporte.html">Suporte</a></li>
           <li><a class="" href="../pages/sobre.html">Sobre</a></li>
@@ -37,85 +39,71 @@
       </nav>
     </header>
 
-    <main class="area-form">
+    <main class="area-form maior">
       <section class="texto-lateral">
-        <h1>Crie sua conta</h1>
+        <h1>Cadastro de peças</h1>
         <p>
-          Cadastre as informações da sua loja para acessar o sistema PinkShelf.
+          Registre os produtos da loja. Eles aparecerão automaticamente no
+          estoque e no relatório.
         </p>
+        <a class="botao secundario" href="estoque.html">Ver estoque</a>
       </section>
-      <form class="formulario" id="formCadastro">
-        <h2>Cadastro da loja</h2>
+      <form class="formulario" id="formPeca">
+        <h2>Nova peça</h2>
+        <label>Nome da peça<input type="text" id="nomePeca" required /></label>
         <label
-          >Nome da loja<input
-            type="text"
-            id="loja"
-            required
-            placeholder="Ex: Pink Store"
-        /></label>
-        <label
-          >Responsável<input
-            type="text"
-            id="responsavel"
-            required
-            placeholder="Ex: Maria Cecília"
-        /></label>
-        <label
-          >E-mail<input
-            type="email"
-            id="email"
-            required
-            placeholder="contato@email.com"
-        /></label>
-        <label
-          >Telefone<input
-            type="tel"
-            id="telefone"
-            placeholder="(31) 99999-9999"
-        /></label>
-        <label
-          >Plano desejado<select id="plano" required>
+          >Categoria<select id="categoriaPeca" required>
             <option value="">Selecione</option>
-            <option>Plano Básico</option>
-            <option>Plano Premium</option>
-            <option>Plano Pink Elite</option>
+            <option>Blusa</option>
+            <option>Calça</option>
+            <option>Vestido</option>
+            <option>Saia</option>
+            <option>Cropped</option>
+            <option>Conjunto</option>
           </select></label
         >
         <label
-          >Forma de pagamento<select id="pagamento" required>
+          >Tamanho<input
+            type="text"
+            id="tamanhoPeca"
+            required
+            placeholder="P, M, G ou 38"
+        /></label>
+        <label>Cor<input type="text" id="corPeca" required /></label>
+        <label
+          >Quantidade<input type="number" id="quantidadePeca" min="0" required
+        /></label>
+        <label
+          >Preço<input
+            type="number"
+            id="precoPeca"
+            min="0"
+            step="0.01"
+            required
+        /></label>
+        <label
+          >Mês<select id="mesPeca" required>
             <option value="">Selecione</option>
-            <option>Pix</option>
-            <option>Cartão de crédito</option>
-            <option>Boleto</option>
+            <option>Janeiro</option>
+            <option>Fevereiro</option>
+            <option>Março</option>
+            <option>Abril</option>
+            <option>Maio</option>
+            <option>Junho</option>
+            <option>Julho</option>
+            <option>Agosto</option>
+            <option>Setembro</option>
+            <option>Outubro</option>
+            <option>Novembro</option>
+            <option>Dezembro</option>
           </select></label
         >
-        <!-- SENHA -->
-        <div class="campo">
-          <label for="senha"> Senha </label>
-
-          <input
-            type="password"
-            id="senha"
-            placeholder="Digite sua senha"
-            required
-          />
-        </div>
-
-        <!-- CONFIRMAR SENHA -->
-        <div class="campo">
-          <label for="confirmar"> Confirmar senha </label>
-
-          <input
-            type="password"
-            id="confirmar"
-            placeholder="Confirme sua senha"
-            required
-          />
-        </div>
-        <button class="botao" type="submit">Criar conta</button>
-        <p class="texto-centro">
-          Já possui cadastro? <a href="login.html">Entrar no sistema</a>
-        </p>
+        <button class="botao" type="submit" id="btnSalvarPeca">
+          Salvar peça
+        </button>
+        <button class="botao secundario" type="button" id="btnLimparEdicao">
+          Cancelar edição
+        </button>
       </form>
     </main>
     <!-- RODAPÉ -->
