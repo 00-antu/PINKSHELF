@@ -1,93 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1.0"
+    />
+    <title>Planos | PinkShelf</title>
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
-  <title>Planos | PinkShelf</title>
-  <link rel="stylesheet" href="../css/estilo.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-
-</head>
-
-<body>
-  <header class="topo">
-    <a class="marca" href="../index.html">
-      <img src="../images/img00.png.png" alt="Logo PinkShelf" class="logo-img" onerror="this.style.display='none'">
-      <span class="logo-texto">PinkShelf</span>
-      <small>controle de estoque</small>
-    </a>
-    <nav class="menu">
-      <ul>
-        <li><a class="" href="../index.html">Início</a></li>
-        <li><a class="" href="../pages/login.html">Login</a></li>
-        <li><a class="ativo" href="../pages/nossosplanos.html">Nossos Planos</a></li>
-        <li><a class="" href="../pages/localizacao.html">Localização</a></li>
-        <li><a class="" href="../pages/suporte.html">Suporte</a></li>
-        <li><a class="" href="../pages/sobre.html">Sobre</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="secao">
-    <center><h1>Nossos Planos</h1></center>
-   <center><p class="subtitulo">Escolha o pacote ideal para gerenciar o estoque da sua loja.</p></center>
-    <div class="grid-cards">
-      <article class="card plano">
-        <h2>Plano Básico</h2><strong>R$ 49,90/mês</strong>
-        <p>
-        <li>Cadastro de produtos;</li>
-        <li>Controle simples;</li>
-        <li>Relatório básico.</li>
+  <body>
+    <header class="topo">
+      <a class="marca" href="../index.html">
+        <img
+          src="../images/img00.png.png"
+          alt="Logo PinkShelf"
+          class="logo-img"
+          onerror="this.style.display = 'none'"
+        />
+        <span class="logo-texto">PinkShelf</span>
+        <small>controle de estoque</small>
+      </a>
+      <nav class="menu">
+        <ul>
+          <li><a class="" href="../index.html">Início</a></li>
+          <li><a class="" href="../pages/login.html">Login</a></li>
+          <li>
+            <a class="ativo" href="../pages/nossosplanos.html">Nossos Planos</a>
+          </li>
+          <li><a class="" href="../pages/localizacao.html">Localização</a></li>
+          <li><a class="" href="../pages/suporte.html">Suporte</a></li>
+          <li><a class="" href="../pages/sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="secao">
+      <center><h1>Nossos Planos</h1></center>
+      <center>
+        <p class="subtitulo">
+          Escolha o pacote ideal para gerenciar o estoque da sua loja.
         </p>
-      </article>
-      <article class="card plano destaque">
-        <h2>Plano Premium</h2><strong>R$ 89,90/mês</strong>
-        <p>
-        <li>Alertas de estoque baixo;</li>
-        <li>Categorias;</li> 
-        <li>Dashboard de vendas.</li>
-        </p>
-      </article>
-      <article class="card plano">
-        <h2>Plano Pink Elite</h2><strong>R$ 129,90/mês</strong>
-        <p>
-            <li>Controle completo;</li>
-            <li>Suporte prioritário;</li> 
-            <li>relatórios avançados.</li>
-        </p>
-      </article>
-    </div>
-  </main>
-  <!-- RODAPÉ -->
-  <footer class="rodape">
-    <div class="rodape-conteudo">
-
+      </center>
+      <div class="grid-cards">
+        <article class="card plano destaque">
+          <h2>Plano Básico</h2>
+          <strong>R$ 49,90/mês</strong>
+          <ul>
+            <li>Até 100 produtos</li>
+            <li>Controle simples</li>
+            <li>Relatório básico</li>
+            <li>Suporte por e-mail</li>
+            <li>Cadastro de peças</li>
+          </ul>
+        </article>
+        <article class="card plano destaque">
+          <h2>Plano Premium</h2>
+          <strong>R$ 89,90/mês</strong>
+          <ul>
+            <li>Até 500 produtos</li>
+            <li>Alerta de estoque baixo</li>
+            <li>Categorias personalizadas</li>
+            <li>Dashboard de vendas</li>
+            <li>Suporte prioritário</li>
+          </ul>
+        </article>
+        <article class="card plano destaque">
+          <h2>Plano Pink Elite</h2>
+          <strong>R$ 129,90/mês</strong>
+          <ul>
+            <li>Produtos ilimitados</li>
+            <li>Controle completo</li>
+            <li>Relatórios avançados</li>
+            <li>Backup automático</li>
+            <li>Suporte VIP 24h</li>
+          </ul>
+        </article>
+      </div>
+    </main>
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+      <div class="rodape-conteudo">
         <!-- Logo/Nome -->
         <div class="rodape-box">
-            <h2>PinkShelf</h2>
-            <p>Sistema inteligente para controle de estoque.</p>
+          <h2>PinkShelf</h2>
+          <p>Sistema inteligente para controle de estoque.</p>
         </div>
 
-  
         <!-- Contato -->
         <div class="rodape-box">
-            <h3>Contato</h3>
+          <h3>Contato</h3>
 
-            <p>Email: contato@pinkshelf.com</p>
-            <p>Telefone: (31) 99999-9999</p>
+          <p>Email: contato@pinkshelf.com</p>
+          <p>Telefone: (31) 99999-9999</p>
         </div>
+      </div>
 
-    </div>
-
-    <!-- Parte de baixo -->
-    <div class="rodape-final">
+      <!-- Parte de baixo -->
+      <div class="rodape-final">
         <p>© 2026 PinkShelf - Todos os direitos reservados.</p>
-    </div>
-</footer>
-  <script src="../js/script.js"></script>
-</body>
-
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
 </html>
