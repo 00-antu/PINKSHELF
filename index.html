@@ -1,150 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0" />
+    <title>Início | PinkShelf</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Início | PinkShelf</title>
-  <link rel="stylesheet" href="css/estilo.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <body>
+    <header class="topo">
+      <a class="marca" href="index.html">
+        <img
+          src="images/img00.png.png"
+          alt="Logo PinkShelf"
+          class="logo-img"
+          onerror="this.style.display = 'none'"
+        />
+        <span class="logo-texto">PinkShelf</span>
+        <small>Controle de estoque</small>
+      </a>
+      <nav class="menu">
+        <ul>
+          <li><a class="ativo" href="index.html">Início</a></li>
+          <li><a class="" href="pages/login.html">Login</a></li>
+          <li><a class="" href="pages/nossosplanos.html">Nossos Planos</a></li>
+          <li><a class="" href="pages/localizacao.html">Localização</a></li>
+          <li><a class="" href="pages/suporte.html">Suporte</a></li>
+          <li><a class="" href="pages/sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
 
-</head>
-
-<body>
-  <header class="topo">
-    <a class="marca" href="index.html">
-      <img src="images/img00.png.png" alt="Logo PinkShelf" class="logo-img" onerror="this.style.display='none'">
-      <span class="logo-texto">PinkShelf</span>
-      <small>Controle de estoque</small>
-    </a>
-    <nav class="menu">
-      <ul>
-        <li><a class="ativo" href="index.html">Início</a></li>
-        <li><a class="" href="pages/login.html">Login</a></li>
-        <li><a class="" href="pages/nossosplanos.html">Nossos Planos</a></li>
-        <li><a class="" href="pages/estoque.html">Estoque</a></li>
-        <li><a class="" href="pages/localizacao.html">Localização</a></li>
-        <li><a class="" href="pages/suporte.html">Suporte</a></li>
-        <li><a class="" href="pages/sobre.html">Sobre</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="home">
-    <!-- CARROSSEL igual à ideia original do site -->
-    <section class="carrossel" aria-label="destaques do PinkShelf">
-      <div class="slide ativo">
-        <img src="images/img1 (2).png" alt="Roupa feminina em destaque">
-      </div>
-      <div class="slide">
-        <img src="images/img2.png" alt="Arara de roupas organizadas">
-      </div>
-      <div class="slide">
-        <img src="images/img3.png" alt="Sistema PinkShelf no celular">
-      </div>
-    </section>
-
-    <section class="hero cadastro-loja-home">
-      <div>
-        <span class="etiqueta">Sistema para lojas de roupas</span>
-        <h1>Comece a organizar seu estoque</h1>
-        <p>Cadastre sua loja, escolha o plano ideal e tenha acesso ao sistema PinkShelf para controlar peças, vendas,
-          estoque e relatórios.</p>
-        <div class="botoes">
-          <a class="botao" href="pages/cadastro.html">Fazer cadastro da loja</a>
-          <a class="botao secundario" href="pages/login.html">Já sou cadastrada</a>
+    <main class="home">
+      <!-- CARROSSEL igual à ideia original do site -->
+      <section class="carrossel" aria-label="destaques do PinkShelf">
+        <div class="slide ativo">
+          <img src="images/img1 (2).png" alt="Roupa feminina em destaque" />
         </div>
-      </div>
-      <div class="painel-demo">
-        <h2>Resumo rápido</h2>
-        <div class="mini-cards">
-          <div><strong id="homeTotalPecas">0</strong><span>Peças</span></div>
-          <div><strong id="homeEstoqueBaixo">0</strong><span>Estoque baixo</span></div>
-          <div><strong id="homeValorEstoque">R$ 0,00</strong><span>Valor em estoque</span></div>
+        <div class="slide">
+          <img src="images/img2.png" alt="Arara de roupas organizadas" />
         </div>
-      </div>
-    </section>
+        <div class="slide">
+          <img src="images/img3.png" alt="Sistema PinkShelf no celular" />
+        </div>
+      </section>
 
-    <section class="secao apresentacao">
-      <h2>Seu estoque, sempre organizado</h2>
-      <p>O PinkShelf foi desenvolvido para facilitar o controle de estoque de lojas de roupas, permitindo cadastrar
-        peças, acompanhar produtos, organizar categorias e visualizar informações importantes de forma prática.</p>
-      <div class="botoes centro">
-        <a class="botao" href="pages/cadastro-pecas.html">Cadastrar peças</a>
-        <a class="botao secundario" href="pages/estoque.html">Ver estoque</a>
-      </div>
-    </section>
+      <section class="hero cadastro-loja-home">
+        <div>
+          <span class="etiqueta">Sistema para lojas de roupas</span>
+          <h1>Comece a organizar seu estoque</h1>
+          <p>
+            Cadastre sua loja, escolha o plano ideal e tenha acesso ao sistema
+            PinkShelf para controlar peças, vendas, estoque e relatórios.
+          </p>
+          <div class="botoes">
+            <a class="botao" href="pages/cadastro.html"
+              >Fazer cadastro da loja</a
+            >
+            <a class="botao secundario" href="pages/login.html"
+              >Já sou cadastrada</a
+            >
+          </div>
+        </div>
+        <div class="painel-demo">
+          <h2>Resumo rápido</h2>
+          <div class="mini-cards">
+            <div><strong id="homeTotalPecas">0</strong><span>Peças</span></div>
+            <div>
+              <strong id="homeEstoqueBaixo">0</strong><span>Estoque baixo</span>
+            </div>
+            <div>
+              <strong id="homeValorEstoque">R$ 0,00</strong
+              ><span>Valor em estoque</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="secao">
-      <h2>Funcionalidades do sistema</h2>
-      <div class="grid-cards">
-        <article class="card">
-          <h3>Controle de estoque</h3>
-          <p>Acompanhe as peças disponíveis e saiba quando repor mercadorias.</p>
-        </article>
-        <article class="card">
-          <h3>Cadastro de peças</h3>
-          <p>Registre roupas, tamanhos, cores, preços, quantidades e categorias.</p>
-        </article>
-        <article class="card">
-          <h3>Alerta de estoque baixo</h3>
-          <p>Itens com até 5 unidades aparecem destacados automaticamente.</p>
-        </article>
-        <article class="card">
-          <h3>Relatórios</h3>
-          <p>Analise quantidade em estoque, valor total e categorias cadastradas.</p>
-        </article>
-      </div>
-    </section>
+      <section class="secao apresentacao">
+        <h2>Seu estoque, sempre organizado</h2>
+        <p>
+          O PinkShelf foi desenvolvido para facilitar o controle de estoque de
+          lojas de roupas, permitindo cadastrar peças, acompanhar produtos,
+          organizar categorias e visualizar informações importantes de forma
+          prática.
+        </p>
+        <div class="botoes centro">
+          <a class="botao" href="#">Cadastrar peças</a>
+          <a class="botao secundario" href="#">Ver estoque</a>
+        </div>
+      </section>
 
-    <section class="secao passos">
-      <h2>Como funciona</h2>
-      <div class="grid-cards">
-        <div class="card"><span>1</span>
-          <h3>Cadastre a loja</h3>
+      <section class="secao">
+        <h2>Funcionalidades do sistema</h2>
+        <div class="grid-cards">
+          <article class="card">
+            <h3>Controle de estoque</h3>
+            <p>
+              Acompanhe as peças disponíveis e saiba quando repor mercadorias.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Cadastro de peças</h3>
+            <p>
+              Registre roupas, tamanhos, cores, preços, quantidades e
+              categorias.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Alerta de estoque baixo</h3>
+            <p>Itens com até 5 unidades aparecem destacados automaticamente.</p>
+          </article>
+          <article class="card">
+            <h3>Relatórios</h3>
+            <p>
+              Analise quantidade em estoque, valor total e categorias
+              cadastradas.
+            </p>
+          </article>
         </div>
-        <div class="card"><span>2</span>
-          <h3>Faça login</h3>
-        </div>
-        <div class="card"><span>3</span>
-          <h3>Cadastre peças</h3>
-        </div>
-        <div class="card"><span>4</span>
-          <h3>Acompanhe estoque e relatório</h3>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- RODAPÉ -->
-<footer class="rodape">
-    <div class="rodape-conteudo">
+      </section>
 
+      <section class="secao passos">
+        <h2>Como funciona</h2>
+        <div class="grid-cards">
+          <div class="card">
+            <span>1</span>
+            <h3>Cadastre a loja</h3>
+          </div>
+          <div class="card">
+            <span>2</span>
+            <h3>Faça login</h3>
+          </div>
+          <div class="card">
+            <span>3</span>
+            <h3>Cadastre peças</h3>
+          </div>
+          <div class="card">
+            <span>4</span>
+            <h3>Acompanhe estoque e relatório</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+      <div class="rodape-conteudo">
         <!-- Logo/Nome -->
         <div class="rodape-box">
-            <h2>PinkShelf</h2>
-            <p>Sistema inteligente para controle de estoque.</p>
+          <h2>PinkShelf</h2>
+          <p>Sistema inteligente para controle de estoque.</p>
         </div>
 
-  
         <!-- Contato -->
         <div class="rodape-box">
-            <h3>Contato</h3>
+          <h3>Contato</h3>
 
-            <p>Email: contato@pinkshelf.com</p>
-            <p>Telefone: (31) 99999-9999</p>
+          <p>Email: contato@pinkshelf.com</p>
+          <p>Telefone: (31) 99999-9999</p>
         </div>
+      </div>
 
-    </div>
-
-    <!-- Parte de baixo -->
-    <div class="rodape-final">
+      <!-- Parte de baixo -->
+      <div class="rodape-final">
         <p>© 2026 PinkShelf - Todos os direitos reservados.</p>
-    </div>
-</footer>
-  <script src="js/script.js"></script>
-</body>
-
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
