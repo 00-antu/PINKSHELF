@@ -1,0 +1,43 @@
+Projeto Web 
+
+(01) NOME DO PROJETO: PinkShelf 
+
+ 
+
+(02) LINK DA PUBLICAÇÃO DO PROJETO: https://00-antu.github.io/PINKSHELF/ 
+
+ 
+
+(03) PARTICIPANTES E PAPÉIS: Giovana Azevedo (Techlead – Dev), Maria Cecília Antunes (Dev), Mariana Fuchs (Designer – Redatora) 
+
+ 
+
+(04) OBJETIVO PRINCIPAL DO PROJETO: O principal objetivo do PinkShelf é auxiliar pequenas e médias lojas de roupas femininas no controle e gerenciamento de estoque de forma simples, organizada e acessível. O sistema permite cadastrar produtos, acompanhar quantidades disponíveis, visualizar relatórios e identificar informações importantes sobre o estoque. Dessa forma, o projeto busca facilitar a administração da loja, reduzir erros de controle e auxiliar na tomada de decisões dos proprietários. 
+
+ 
+
+(05) DESCRIÇÃO RESUMIDA DO PROJETO: O PinkShelf é um sistema web desenvolvido para o gerenciamento de estoque de lojas de roupas femininas. O site possui uma interface intuitiva e visualmente agradável, utilizando uma identidade visual em tons de rosa para tornar a navegação mais amigável ao público-alvo. Entre suas funcionalidades estão o cadastro de lojas, login de usuários, cadastro de peças, consulta ao estoque e geração de relatórios. Além disso, o sistema apresenta informações organizadas em tabelas e cartões, facilitando a visualização dos dados cadastrados. 
+O projeto também conta com recursos que auxiliam o acompanhamento do estoque por meio de gráficos e relatórios mensais. Essas ferramentas permitem que o usuário visualize a quantidade de produtos cadastrados, o valor total do estoque e as categorias com maior destaque. Foram utilizadas tecnologias como HTML, CSS e JavaScript para a construção do sistema, aplicando os conhecimentos adquiridos durante a disciplina de Introdução à Programação Web. O resultado é uma solução prática que contribui para uma melhor organização e controle dos produtos de uma loja. 
+
+ 
+
+(06) FINALIDADE: O PinkShelf foi criado com o objetivo de proporcionar uma experiência de gerenciamento de estoque prática, moderna e acolhedora, especialmente para o público feminino. A plataforma auxilia na organização e no controle de produtos, tornando a administração mais simples e eficiente. Embora tenha sido desenvolvido com uma identidade visual voltada às mulheres, o sistema pode ser utilizado por qualquer pessoa que deseje otimizar a gestão de seu estoque. 
+
+ 
+
+(07) PARTICIPAÇÃO: Houve a participação de todos os integrantes, tendo em vista que todos realizaram seus papéis de acordo com a divisória proposta anteriormente. 
+
+ 
+
+(08) APLICAÇÃO DO PROJETO: Sim. Os conhecimentos teóricos adquiridos na disciplina foram aplicados diretamente no desenvolvimento do PinkShelf. Durante a criação do sistema foram utilizados conceitos de estruturação de páginas com HTML, estilização com CSS e interatividade com JavaScript. Esses conhecimentos permitiram desenvolver funcionalidades reais, como formulários de cadastro, páginas de login, controle de estoque e geração de relatórios. 
+Além do aprendizado acadêmico, o projeto pode beneficiar pequenos empreendedores e proprietários de lojas de roupas que necessitam de uma ferramenta simples para organizar seus produtos. Dessa forma, o conhecimento adquirido em sala de aula foi transformado em uma solução prática que pode auxiliar na gestão de negócios. 
+
+ 
+
+(09) O desenvolvimento do PinkShelf permitiu colocar em prática os conteúdos estudados ao longo da disciplina, proporcionando uma experiência real de criação de um sistema web completo. Além de aprimorar conhecimentos técnicos, o projeto demonstrou a importância da tecnologia na organização e gestão de pequenos negócios. O resultado foi uma plataforma funcional, intuitiva e capaz de auxiliar no controle eficiente de estoques. 
+
+ 
+
+ 
+
+ 
